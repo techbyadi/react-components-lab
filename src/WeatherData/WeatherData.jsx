@@ -1,13 +1,11 @@
 const WeatherData = (props) => {
-  const {day, conditions, time} = props
+  const {conditions, time} = props
   return (
     <>
-    {day}
-    {conditions}
-    {time}
+      <p><span>conditions: </span>{conditions}</p>
+      <p><span>time: </span>{time}</p>
     </>
-    
-  )
+  );
 }
 
 export default WeatherData;
